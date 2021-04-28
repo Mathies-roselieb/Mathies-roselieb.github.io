@@ -15,12 +15,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--<link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />-->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Yao's Traditionelle Thaimassage</title>
+    
   </head>
   <body class="text-gray-800 antialiased">
     <nav
@@ -87,7 +90,7 @@
           </svg>
         </div>
       </div>
-      <section class="pb-20 bg-gray-300 -mt-20">
+      <section class="pb-20 bg-gray-300 -mt-20" data-aos="fade-right">
         <div class="container mx-auto px-4">          
           <div class="flex flex-wrap items-center mt-20">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
@@ -182,7 +185,7 @@
             ></polygon>
           </svg>
         </div>
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4" data-aos="fade-left" data-aos-offset="200">
           <div class="items-center flex flex-wrap">
             <div class="w-full md:w-6/12 ml-auto mr-auto px-4">
               <img
@@ -216,7 +219,7 @@
               </div>
             </div>
           </div>
-          <div class="items-center flex flex-wrap-reverse pt-4">
+          <div class="items-center flex flex-wrap-reverse pt-4" data-aos="fade-right" data-aos-offset="200">
             
             <div class="w-full md:w-6/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">                
@@ -273,7 +276,7 @@
           </svg>
         </div>
         
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4" data-aos="zoom-in">
           
           <div class="flex flex-wrap justify-center text-center mb-24">
             <div class="w-full lg:w-10/12 px-4">
@@ -456,5 +459,8 @@ Ich biete Ihnen eine angenehme, entspannende und erholsame Zeit in ruhiger priva
       document.getElementById(collapseID).classList.toggle("hidden");
       document.getElementById(collapseID).classList.toggle("block");
     }
+  </script>
+  <script>
+    AOS.init();
   </script>
 </html>
